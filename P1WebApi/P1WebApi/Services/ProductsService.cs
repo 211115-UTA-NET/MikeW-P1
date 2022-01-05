@@ -10,16 +10,16 @@ namespace P1WebApi.Services
         {
             Item = new List<Products> //creating a list of product temporarily, will need to pull the list from the DB
             {
-                new Products { Id = 1, Name ="Apples", IsAvailable = true},
-                new Products { Id = 2, Name ="Bananas", IsAvailable=true}
+                new Products { ProductId = 1, ProductName ="Apples", ProductQuantity = 10},
+                new Products { ProductId = 2, ProductName ="Bananas", ProductQuantity= 10}
             };
         }
 
         public static List<Products> GetAll() => Item;
-        public static Products? Get(int id) => Item.FirstOrDefault(p => p.Id == id);
+        public static Products? Get(int id) => Item.FirstOrDefault(p => p.ProductId == id);
         public static void Add(Products product)
         {
-            product.Id = nextId++;
+            product.ProductId = nextId++;
             Item.Add(product);
         }
 
@@ -33,7 +33,7 @@ namespace P1WebApi.Services
 
         public static void Update(Products product)
         {
-            var index = Item.FindIndex(p => p.Id == product.Id);
+            var index = Item.FindIndex(p => p.ProductId == product.ProductId);
             if (index == -1)
                 return;
 

@@ -5,7 +5,17 @@
       "ProjectGuid": "2502ad17-1e4c-4516-9386-a59dafa4fca0",
       "DisplayName": "P1WebApi",
       "ColorIndex": 0
+    },
+    "3e1b2578-7f5c-4935-bb72-61960f4cce9f": {
+      "ProjectGuid": "3e1b2578-7f5c-4935-bb72-61960f4cce9f",
+      "DisplayName": "DataStorage",
+      "ColorIndex": 1
+    },
+    "7e1d2e70-1520-463e-bd21-9ad56bd20690": {
+      "ProjectGuid": "7e1d2e70-1520-463e-bd21-9ad56bd20690",
+      "DisplayName": "P1ConsoleApp",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 3
 }

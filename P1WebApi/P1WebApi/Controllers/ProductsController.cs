@@ -35,7 +35,7 @@ namespace P1WebApi.Controllers
             //NEED TO CHANGE TO ORDER - could this be used to add Products to a cart?? 
             //saves a product and returns a result
             ProductsService.Add(product);
-            return CreatedAtAction(nameof(Create), new {id = product.Id}, product);
+            return CreatedAtAction(nameof(Create), new {id = product.ProductId}, product);
         }
 
         // PUT action - CHANGE
@@ -43,7 +43,7 @@ namespace P1WebApi.Controllers
         public IActionResult Update(int id, Products product)
         {
             //this code will update the Product and return a result
-            if(id != product.Id)
+            if(id != product.ProductId)
                 return BadRequest();    
             
             var existingProducts = ProductsService.Get(id);

@@ -3,9 +3,9 @@
     // list of Inventory
     public class Products
     {
-        public int Id { get; set; }
-        public string? Name { get; set; }
-        public bool IsAvailable { get; set; } //change to quantity
+        public int ProductId { get; set; }
+        public string? ProductName { get; set; }
+        public int ProductQuantity { get; set; } //change to quantity
 
         //add price
         //add store location
