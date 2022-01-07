@@ -1631,7 +1631,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "P1ConsoleApp": "1.0.0"
+          "P1ConsoleApp": "1.0.0",
+          "System.Data.SqlClient": "4.8.3"
         },
         "compile": {
           "bin/placeholder/DataStorage.dll": {}
@@ -1644,7 +1645,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Microsoft.AspNet.WebApi.Client": "5.2.7"
+          "Microsoft.AspNet.WebApi.Client": "5.2.7",
+          "System.Data.SqlClient": "4.8.3"
         },
         "compile": {
           "bin/placeholder/P1ConsoleApp.dll": {}

@@ -24,7 +24,7 @@ namespace P1WebApi.Controllers
             IEnumerable<Customer> customer;
             try
             {
-                customer = await _repository.GetAllAsync(custId); 
+                customer = (IEnumerable<Customer>)await _repository.GetAllAsync(custId); 
             }
             catch (SqlException)
             {

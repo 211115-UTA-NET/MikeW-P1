@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc.Formatters;
 using P1WebApi.Controllers;
-//using RpsApi.DataStorage;
+using DataStorage;
 
 string connectionString = await File.ReadAllTextAsync("C: /Users/mjwaw/Revature/TextFile1.txt");
-
+IRepository repository = new SqlRepository(connectionString);
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
