@@ -17,3 +17,9 @@ C:\Users\mjwaw\Revature\MikeW-P1\P1ConsoleApp\P1ConsoleApp\obj\Debug\net6.0\P1Co
 C:\Users\mjwaw\Revature\MikeW-P1\P1ConsoleApp\P1ConsoleApp\obj\Debug\net6.0\ref\P1ConsoleApp.dll
 C:\Users\mjwaw\Revature\MikeW-P1\P1ConsoleApp\P1ConsoleApp\obj\Debug\net6.0\P1ConsoleApp.pdb
 C:\Users\mjwaw\Revature\MikeW-P1\P1ConsoleApp\P1ConsoleApp\obj\Debug\net6.0\P1ConsoleApp.genruntimeconfig.cache
+C:\Users\mjwaw\Revature\MikeW-P1\P1ConsoleApp\P1ConsoleApp\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\mjwaw\Revature\MikeW-P1\P1ConsoleApp\P1ConsoleApp\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\mjwaw\Revature\MikeW-P1\P1ConsoleApp\P1ConsoleApp\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\mjwaw\Revature\MikeW-P1\P1ConsoleApp\P1ConsoleApp\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\mjwaw\Revature\MikeW-P1\P1ConsoleApp\P1ConsoleApp\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\mjwaw\Revature\MikeW-P1\P1ConsoleApp\P1ConsoleApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
