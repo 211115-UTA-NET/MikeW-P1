@@ -5,9 +5,9 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P1WebApi", "P1WebApi\P1WebApi.csproj", "{2502AD17-1E4C-4516-9386-A59DAFA4FCA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStorage", "DataStorage\DataStorage.csproj", "{3E1B2578-7F5C-4935-BB72-61960F4CCE9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStorage", "DataStorage\DataStorage.csproj", "{3E1B2578-7F5C-4935-BB72-61960F4CCE9F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P1ConsoleApp", "..\P1ConsoleApp\P1ConsoleApp\P1ConsoleApp.csproj", "{7E1D2E70-1520-463E-BD21-9AD56BD20690}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{455D20D9-96BF-42A2-AFCE-0C4EE514C6D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{3E1B2578-7F5C-4935-BB72-61960F4CCE9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E1B2578-7F5C-4935-BB72-61960F4CCE9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E1B2578-7F5C-4935-BB72-61960F4CCE9F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7E1D2E70-1520-463E-BD21-9AD56BD20690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7E1D2E70-1520-463E-BD21-9AD56BD20690}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7E1D2E70-1520-463E-BD21-9AD56BD20690}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7E1D2E70-1520-463E-BD21-9AD56BD20690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{455D20D9-96BF-42A2-AFCE-0C4EE514C6D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{455D20D9-96BF-42A2-AFCE-0C4EE514C6D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{455D20D9-96BF-42A2-AFCE-0C4EE514C6D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{455D20D9-96BF-42A2-AFCE-0C4EE514C6D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

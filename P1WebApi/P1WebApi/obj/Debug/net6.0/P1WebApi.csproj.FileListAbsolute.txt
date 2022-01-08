@@ -42,3 +42,4 @@ C:\Users\mjwaw\Revature\MikeW-P1\P1WebApi\P1WebApi\bin\Debug\net6.0\DataStorage.
 C:\Users\mjwaw\Revature\MikeW-P1\P1WebApi\P1WebApi\bin\Debug\net6.0\P1ConsoleApp.dll
 C:\Users\mjwaw\Revature\MikeW-P1\P1WebApi\P1WebApi\bin\Debug\net6.0\DataStorage.pdb
 C:\Users\mjwaw\Revature\MikeW-P1\P1WebApi\P1WebApi\bin\Debug\net6.0\P1ConsoleApp.pdb
+C:\Users\mjwaw\Revature\MikeW-P1\P1WebApi\P1WebApi\obj\Debug\net6.0\P1WebApi.MvcApplicationPartsAssemblyInfo.cs

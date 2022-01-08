@@ -1,18 +1,12 @@
-﻿using P1ConsoleApp;
-using P1WebApi.Controllers;
-using System;
-using System.Collections.Generic;
+﻿using P1WebApi.Controllers;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataStorage
 {
     public class SqlRepository : IRepository
     {
         private readonly string _connectionString;
-        
+
         public SqlRepository(string connectionString)
         {
             _connectionString = connectionString ?? throw new ArgumentNullException(nameof(connectionString));
@@ -29,7 +23,7 @@ namespace DataStorage
 
             using SqlDataReader reader = cmd.ExecuteReader();
             connection.Close();
-            
+
             return result;
         }
         //adding nw customer to database
@@ -45,6 +39,52 @@ namespace DataStorage
 
             command.ExecuteNonQuery();
             connection.Close();
+        }
+        internal static void StoreInventoryMilwaukee()
+        {
+            string connectionString = File.ReadAllText("C:/Users/mjwaw/Revature/TextFile1.txt");
+
+            //shows store inventory
+            using SqlConnection connection = new(connectionString);
+            connection.Open();
+
+            string commandText = "SELECT * FROM Store Where location = 'Milwaukee, WI'";
+
+            using SqlCommand command = new(commandText, connection);
+
+            using SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                string Location = reader.GetString(0);
+                string ItemName = reader.GetString(1);
+                int Quantity = reader.GetInt32(2);
+                decimal Price = reader.GetDecimal(3);
+
+                Console.WriteLine($"In stock in {Location} are {ItemName}, there are {Quantity}, each one costs ${Price}");
+            }
+        }
+        internal static void StoreInventoryMadison()
+        {
+            string connectionString = File.ReadAllText("C:/Users/mjwaw/Revature/TextFile1.txt");
+
+            //shows store inventory
+            using SqlConnection connection = new(connectionString);
+            connection.Open();
+
+            string commandText = "SELECT * FROM Store Where location = 'Madison, WI'";
+
+            using SqlCommand command = new(commandText, connection);
+
+            using SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                string Location = reader.GetString(0);
+                string ItemName = reader.GetString(1);
+                int Quantity = reader.GetInt32(2);
+                decimal Price = reader.GetDecimal(3);
+
+                Console.WriteLine($"In stock in {Location} are {ItemName}, there are {Quantity}, each one costs ${Price}");
+            }
         }
     }
 }
