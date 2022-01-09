@@ -1,10 +1,12 @@
 ﻿using Logic;
+using Microsoft.AspNetCore.Mvc;
 
-namespace P1WebApi.DataStorage
+namespace DataStorage
 {
     public interface IRepository
     {
-        Task<IEnumerable<Customer>> GetAllAsync(int custId);
+        Task<IEnumerable<Customer>> GetAllCustomersAsync(string FirstName);
+       // Task<IEnumerable<Store>> GetInventoryListAsync();
 
          public static void AddNewCustomer(string firstName, string lastName)
         {

@@ -4,6 +4,7 @@ namespace P1ConsoleApp
 {
     public interface IHttp
     {
-        Task<List<Order>> GetInventoryListAsync();
+        Task<List<Order>> GetCustomerListAsync();
+        
     }
 }

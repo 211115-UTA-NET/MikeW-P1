@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using P1ConsoleApp.DTOs;
 
 namespace P1ConsoleApp
 {
@@ -12,11 +13,10 @@ namespace P1ConsoleApp
 
         public async static Task Main(string[] args)
         {
-            //HttpResponseMessage response = await HttpClient.GetAsync($"https://localhost:7255");
+            
 
-            Uri server = new("https://localhost:7255");
-            //RpsConsoleApp.UI uses a IGaeservice class here
-            //IGameService gameService = new GameService(server);
+            Uri server = new("https://localhost:7072");
+            
 
             Store store = new Store();
             IHttp http = new HttpMethods(server);
@@ -28,8 +28,8 @@ namespace P1ConsoleApp
             Console.WriteLine("1. Which store do you want to shop at? \n 1) Milwaukee \n 2) Madison");
             // Milwaukee or Madison - utilize a logical OR in if statement
 
-            Console.WriteLine("2. View Order History.");
-            Console.WriteLine("3. ");
+            Console.WriteLine("3. View Order History.");
+            //Console.WriteLine("4. ");
 
 
 
@@ -56,11 +56,11 @@ namespace P1ConsoleApp
                     string ans = Console.ReadLine();
                     if (ans == "yes" || ans == "Yes")
                     {
-                        Customer.AddNewCustomer();
+                        //Customer.AddNewCustomer();
                     }
                     Console.WriteLine($"The total cost of your items is: ${store.Checkout()}");
                     //Sql statement - get from P0 
-                    Order.AddNewOrderMilwaukee();
+                    //Order.AddNewOrderMilwaukee();
                     break;
 
                 default:
@@ -69,7 +69,7 @@ namespace P1ConsoleApp
             switch (input)
             {
                 case 1:
-                    Store.StoreInventoryMadison();
+                    //Store.StoreInventoryMadison();
                     break;
                 case 2:
                     printShoppingCart(store);
@@ -81,11 +81,11 @@ namespace P1ConsoleApp
                     string ans = Console.ReadLine();
                     if (ans == "yes" || ans == "Yes")
                     {
-                        Customer.AddNewCustomer();
+                        //Customer.AddNewCustomer();
                     }
                     Console.WriteLine($"The total cost of your items is: ${store.Checkout()}");
                     //Sql statement - get from P0 
-                    Order.AddNewOrderMadison();
+                   // Order.AddNewOrderMadison();
                     break;
 
                 default:

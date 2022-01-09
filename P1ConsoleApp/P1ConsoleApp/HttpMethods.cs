@@ -7,7 +7,7 @@ using P1ConsoleApp.DTOs;
 
 namespace P1ConsoleApp
 {
-    public class HttpMethods
+    public class HttpMethods : IHttp
     {
         private readonly HttpClient _httpClient = new();
 
@@ -19,11 +19,14 @@ namespace P1ConsoleApp
         {
             _httpClient.BaseAddress = serverUri;
         }
-        public async Task<List<Order>> GetInventoryListAsync()
+        public async Task<List<Customer>> GetCustomerListAsync( )
         {
-            string location = " "; string itemName = " "; string quantity = " "; string price = " ";
-            Dictionary<string, string> query = new() { ["Location"] = location, ["ItemName"] = itemName, ["Quantity"] = quantity, ["Price"] = price };
-            string requestUri = QueryHelpers.AddQueryString("/api/Store", query); //getting inventory list from store??
+            int CustomerId = 0;
+            string FirstName = "";
+            string LastName = "";
+
+            Dictionary<string, string> query = new() { ["FirstName"] = FirstName};
+            string requestUri = QueryHelpers.AddQueryString("/api/Customer", query); 
 
             HttpRequestMessage request = new(HttpMethod.Get, requestUri);
             // telling the server we expect application/json reply. ("content negotiation" in http/rest)
@@ -50,13 +53,18 @@ namespace P1ConsoleApp
                 throw new UnexpectedServerBehaviorException();
             }
 
-            var inventory = await response.Content.ReadFromJsonAsync<List<Order>>();
-            if (inventory == null)
+            var customer = await response.Content.ReadFromJsonAsync<List<Order>>();
+            if (customer == null)
             {
                 throw new UnexpectedServerBehaviorException();
             }
 
-            return inventory;
+            return customer;
+        }
+
+        Task<List<Order>> IHttp.GetCustomerListAsync()
+        {
+            throw new NotImplementedException();
         }
     }
     }

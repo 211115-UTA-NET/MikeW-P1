@@ -11,7 +11,7 @@ Nov 15 2021 Arlington .NET / Richard Hawkins, Nick Escalona
 * display all order history of a customer
 * input validation (in the console app and also in the server)
 * exception handling, including foreseen SQL and HTTP errors
-* persistent data; no prices, customers, order history, etc. hardcoded in C#
+* //persistent data; no prices, customers, order history, etc. hardcoded in C# -DONE
 * (recommended: asynchronous network & other I/O, at least on the REST API)
 * (optional: logging of exceptions and other events
 * (optional: order history can be sorted by earliest, latest, cheapest, most expensive)
@@ -24,7 +24,7 @@ Nov 15 2021 Arlington .NET / Richard Hawkins, Nick Escalona
 * use an Azure SQL DB in third normal form
 * have a SQL script that can set up the database from scratch
 * don't use public fields
-* define and use at least one interface
+* define and use at least one interface - DONE
 * best practices: separation of concerns, OOP principles, SOLID, REST, HTTP
 * XML documentation
 
@@ -46,7 +46,7 @@ Nov 15 2021 Arlington .NET / Richard Hawkins, Nick Escalona
 * (optional: has a default store location to order from)
 
 #### order
-* has a store location
+* has a store location - Done
 * has a customer
 * has an order time (when the order was placed)
 * can contain multiple kinds of product in the same order
